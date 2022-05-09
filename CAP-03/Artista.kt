@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
     //var notNullArtista: Artista = null
 
     // Artista puede ser nulo.
-    var artista: Artista? = null
+    val artista: Artista? = null
 
     // No compilará, artista podría ser nulo.
     artista.toString()
