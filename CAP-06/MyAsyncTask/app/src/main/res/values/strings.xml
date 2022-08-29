@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Async Task</string>
+    <string name="txt_btn_1">Tarea Asíncrona 1</string>
+    <string name="txt_btn_2">Tarea Asíncrona 2</string>
+</resources>

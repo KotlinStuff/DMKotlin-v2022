@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnTaskUno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/txt_btn_1"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelUno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:enabled="false"
+        android:text="@android:string/cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTaskUno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTaskUno" />
+
+    <ProgressBar
+        android:id="@+id/progressBarUno"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCancelUno"
+        app:layout_constraintStart_toStartOf="@+id/btnTaskUno"
+        app:layout_constraintTop_toBottomOf="@+id/btnTaskUno" />
+
+    <Button
+        android:id="@+id/btnTaskDos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/txt_btn_2"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelDos"
+        app:layout_constraintStart_toStartOf="@+id/progressBarUno"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarUno" />
+
+    <Button
+        android:id="@+id/btnCancelDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:enabled="false"
+        android:text="@android:string/cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTaskDos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTaskDos" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDos"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCancelDos"
+        app:layout_constraintStart_toStartOf="@+id/btnTaskDos"
+        app:layout_constraintTop_toBottomOf="@+id/btnTaskDos" />
+</androidx.constraintlayout.widget.ConstraintLayout>
