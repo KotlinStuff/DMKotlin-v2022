@@ -8,7 +8,7 @@ import es.javiercarrasco.myrecyclerview.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var myAdapter: RecyclerAdapter
+    private lateinit var myAdapter: MyAnimalAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,20 +18,19 @@ class MainActivity : AppCompatActivity() {
         setUpRecyclerView()
     }
 
-    // Método encargado de configurar el RV.
-    private fun setUpRecyclerView() {
+    private  fun setUpRecyclerView() {
         // Esta opción a TRUE significa que el RV tendrá
         // hijos del mismo tamaño, optimiza su creación.
-        binding.myRVAnimals.setHasFixedSize(true)
+        binding.recyclerView.setHasFixedSize(true)
 
         // Se indica el contexto para RV en forma de lista.
-        binding.myRVAnimals.layoutManager = LinearLayoutManager(this)
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
 
         // Se genera el adapter.
-        myAdapter = RecyclerAdapter(getAnimals())
+        myAdapter = MyAnimalAdapter(getAnimals())
 
         // Se asigna el adapter al RV.
-        binding.myRVAnimals.adapter = myAdapter
+        binding.recyclerView.adapter = myAdapter
     }
 
     // Método encargado de generar la fuente de datos.
