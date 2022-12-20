@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import es.javiercarrasco.mybasicrecyclerview.databinding.ActivityMainBinding
@@ -66,7 +67,11 @@ class MainActivity : AppCompatActivity() {
         init {
             // Evento onClick sobre la vista completa.
             itemView.setOnClickListener {
-                Toast.makeText(this@MainActivity, "Pulsado '${textField.text}'",Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this@MainActivity,
+                    "Pulsado '${textField.text}'",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
     }
