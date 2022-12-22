@@ -72,3 +72,6 @@ Thumbs.db
 
 # IntelliJ
 **/.idea/*
+
+# Firebase
+google-services.json
