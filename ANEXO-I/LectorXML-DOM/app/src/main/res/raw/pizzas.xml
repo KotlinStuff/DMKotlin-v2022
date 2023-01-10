@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pizzas>
+  <pizza nombre="Barbacoa" precio="8">
+    <ingrediente>Salsa Barbacoa</ingrediente>
+    <ingrediente>Mozzarella</ingrediente>
+    <ingrediente>Pollo</ingrediente>
+    <ingrediente>Bacon</ingrediente>
+    <ingrediente>Ternera</ingrediente>
+  </pizza>
+  <pizza nombre="Margarita" precio="6">
+    <ingrediente>Tomate</ingrediente>
+    <ingrediente>Jamón</ingrediente>
+    <ingrediente>Queso</ingrediente>
+  </pizza>
+  <pizza nombre="Cuatro quesos" precio="10">
+    <ingrediente>Tomate</ingrediente>
+    <ingrediente>Queso Havarti</ingrediente>
+    <ingrediente>Queso Azul</ingrediente>
+    <ingrediente>Cabrales</ingrediente>
+    <ingrediente>Mozzarella</ingrediente>
+  </pizza>
+  <pizza nombre="Cuatro estaciones" precio="9">
+    <ingrediente>Tomate</ingrediente>
+    <ingrediente>Jamón</ingrediente>
+    <ingrediente>Champiñones</ingrediente>
+    <ingrediente>Pepperoni</ingrediente>
+    <ingrediente>Mozzarella</ingrediente>
+  </pizza>
+</pizzas>
