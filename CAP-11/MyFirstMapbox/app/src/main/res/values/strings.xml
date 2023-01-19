@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My First Mapbox</string>
+    <string name="mapbox_access_token">YOUR_MAPBOX_ACCESS_TOKEN</string>
+
+    <string name="explicacion_permiso">Se necesita el permiso de localización para el funcionamiento de la aplicación.</string>
+    <string name="permiso_no_concedido">No se ha concedido el permiso de localización.</string>
+    <string name="desc_button">Eliminar todas las marcas del mapa.</string>
+</resources>
